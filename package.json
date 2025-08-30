@@ -152,5 +152,23 @@
       "admin/",
       "packages/"
     ]
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^12.1.4",
+    "append-field": "^2.0.0",
+    "busboy": "^1.6.0",
+    "compressible": "^2.0.18",
+    "express": "^5.1.0",
+    "file-stream-rotator": "^1.0.0",
+    "mongodb": "^6.19.0",
+    "oauth4webapi": "^3.8.1",
+    "openid-client": "^5.4.2",
+    "redis": "^5.8.2",
+    "stitches": "^1.2.11",
+    "uid-safe": "^2.1.5",
+    "workbox-build": "^7.3.0",
+    "xml-crypto": "^6.1.2",
+    "xml-encryption": "^3.1.0",
+    "xml2js": "^0.6.2"
   }
 }

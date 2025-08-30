@@ -1,0 +1,27 @@
+[Unit]
+Description=LibreChat (from source)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=librechat
+Group=librechat
+WorkingDirectory=/opt/LibreChat/librechat
+Environment=NODE_ENV=production
+# ensure env file is readable by librechat user
+EnvironmentFile=/opt/LibreChat/librechat/.env
+# build once on first start (comment after first run if you prefer)
+ExecStartPre=/usr/bin/npm run frontend
+ExecStart=/usr/bin/npm run backend
+Restart=on-failure
+RestartSec=3
+
+# Hardening
+ProtectSystem=full
+ReadWritePaths=/opt/LibreChat
+NoNewPrivileges=yes
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
