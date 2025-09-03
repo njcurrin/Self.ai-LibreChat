@@ -10,7 +10,7 @@ export const data: TModelSpec[] = [
     iconURL: 'https://i.kym-cdn.com/entries/icons/facebook/000/017/252/2f0.jpg',
     // iconURL: EModelEndpoint.openAI,
     preset: {
-      endpoint: 'Ollama',
+      endpoint: 'Ol1lama',
       greeting: 'My fellow Americans,',
       // 'endpointType': EModelEndpoint.custom,
       frequency_penalty: 0,
